@@ -68,7 +68,7 @@ function Chat(props) {
                                     }}
                                     onKeyPress={(event)=>{event.key==="Enter" && sendMessage()}}
                                     />
-                                    <button onClick={sendMessage}>&#9658;</button>
+                                <button onClick={sendMessage}>&#9658;</button>
                 </footer> 
             </div>
         </div>

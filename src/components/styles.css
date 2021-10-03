@@ -196,6 +196,7 @@
     border: 1px solid cornflowerblue;
     margin-top: 10px;
     border-radius: 12px;
+    
   }
   
   .chat-window .chat-footer input {
@@ -206,8 +207,8 @@
     border: 0;
     margin: 0;
     font-size: 1em;
-    border-right: 1px dotted #607d8b;
-    color: cornsilk;
+    border-right: 1px solid #ada029;
+    color: rgb(48, 33, 189);
     letter-spacing: 1px;
     outline: none;
     font-family: "Open Sans", sans-serif;
@@ -224,10 +225,13 @@
     outline: none;
     font-size: 25px;
     color: lightgray;
+    margin-bottom: 1rem;
   }
   
   .chat-window .chat-footer button:hover {
     color: #43a047;
+    transform: scale(1.5);
+               
   }
   .hide {
     opacity: 0 !important;

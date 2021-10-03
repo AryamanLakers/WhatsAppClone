@@ -1,0 +1,234 @@
+/* .App {
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    color: #212121;
+    font-family: "Open Sans", sans-serif;
+    display: grid;
+    place-items: center;
+  } */
+  body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Manrope', sans-serif;
+  }
+  @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+  
+  /* .joinChatContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .joinChatContainer h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .joinChatContainer input {
+    width: 210px;
+    height: 40px;
+    margin: 7px;
+    border: 2px solid #43a047;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .joinChatContainer button {
+    width: 225px;
+    height: 50px;
+    margin: 7px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 16px;
+    background: #43a047;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .joinChatContainer button:hover {
+    background: #2e7d32;
+  }
+   */
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .chat-window {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border:2px solid #43a047;
+  }
+  
+  .chat-header {
+    height: 3rem;
+    border-radius: 6px;
+    background: #838688;
+    position: fixed;
+    cursor: pointer;
+    top: 3rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+   .chat-header p {
+    display: block;
+    padding: 1rem;
+   
+    color: rgb(255, 244, 244);
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 2px;
+  }
+  /* calc(450px - (45px + 70px)) */
+  .chat-body{
+    height: 80%;
+    width: 95%;
+    border-radius: 12px;
+    border: 1px solid #c5d5dd;
+    background: rgb(218, 10, 10);
+    margin-bottom: 0.2rem;
+    position: relative;
+    /* top: -5rem; */
+    border-radius: 12px;
+  }
+  
+   .chat-body .message-container {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 12px;
+    display: flex;
+
+  }
+  
+   .chat-body .message-container::-webkit-scrollbar {
+    display: none;
+  }
+   .chat-body .message {
+    height: auto;
+    padding: 10px;
+    display: flex;
+  }
+  
+   .chat-body .message .message-content {
+    width: auto;
+    height: auto;
+    min-height: 40px;
+    max-width: 40rem;
+    background-color: #c066c0;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+   
+    align-items: center;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    border-radius: 12px;
+  }
+  .chat-body .message .message-content p {
+    background: none;
+    letter-spacing: 1px;
+  }
+  #you {
+    justify-content: flex-start;
+  }
+  
+  #you .message-content {
+    justify-content: flex-start;
+  }
+  
+  #you .message-meta {
+    justify-content: flex-start;
+    margin-left: 5px;
+  }
+  
+  #other {
+    justify-content: flex-end;
+  }
+  #other .message{
+    justify-content: flex-end;
+  }
+  
+  #other .message-content {
+    justify-content: flex-end;
+    background-color: rgb(14, 132, 241);
+  }
+  
+  #other .message-meta {
+    justify-content: flex-end;
+    margin-right: 5px;
+  }
+  
+  .message-meta #author {
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  
+   .chat-body .message .message-meta {
+    display: flex;
+    font-size: 12px;
+    color: #ada029;
+  }
+  
+  .input-class{
+      width: 100%;
+      
+  }
+  .chat-footer {
+    display: flex;
+    width: 95%;
+    border: 1px solid cornflowerblue;
+    margin-top: 10px;
+    border-radius: 12px;
+  }
+  
+  .chat-window .chat-footer input {
+    height: 100%;
+    border-radius: 12px;
+    padding-left: 2rem;
+    flex: 85%;
+    border: 0;
+    margin: 0;
+    font-size: 1em;
+    border-right: 1px dotted #607d8b;
+    color: cornsilk;
+    letter-spacing: 1px;
+    outline: none;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .chat-window .chat-footer button {
+    border: 0;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    flex: 15%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    font-size: 25px;
+    color: lightgray;
+  }
+  
+  .chat-window .chat-footer button:hover {
+    color: #43a047;
+  }
+  .hide {
+    opacity: 0 !important;
+  }

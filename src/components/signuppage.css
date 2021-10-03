@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color:#191a29 ;
+    font-family: 'Manrope', sans-serif;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.outer-box{
+    position:relative;
+    width: 50%;
+    height: 75%;
+    background: linear-gradient(45deg,red,orange,yellow,green,blue,indigo,violet);
+    /* background: radial-gradient(circle at 50% 50%, #FFFFFF 0%, #000000 100%), conic-gradient(red, yellow, lime, aqua, blue, fuchsia, red);
+background-blend-mode: color-dodge, normal; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    top: calc(100vh/48);
+    border-radius: 5px;
+    animation: func 40s linear infinite;
+    background-size: 400%;
+   
+}
+.inner-box{
+   
+    content: '';
+    position:absolute;
+    height: 97%;
+    width: 99%;
+    background: black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: scroll;
+}
+@keyframes func {
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        
+        background-position:400% 0;
+    }
+    100%{
+        background-position:0 0;
+    }
+}
+h1{ margin-top: 1rem;
+    color: white;
+    background: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+.inner-box input[type="text"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 0.5rem 0.2rem;
+    width: 50%;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.inner-box input[type="text"]:focus{
+    width: 30rem;
+    border-color: #2ecc71;
+}
+
+.inner-box input[type="submit"],.inner-box input[type="button"]{
+    border:0;
+    background: none;
+    display: inline;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    /* padding: 14px 10px; */
+    padding: 0.5rem 0.2rem;
+    width: 50%;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    margin-left: 20px;
+    letter-spacing: 2px;
+}
+.buttonContainer{
+    background: none;
+}
+.inner-box input[type="submit"]:hover,.inner-box input[type="button"]:hover{
+    border: 0;
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px  #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+}
